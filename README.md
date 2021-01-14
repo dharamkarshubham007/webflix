@@ -6,6 +6,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+You need to create `.env.development` for development and `.env.production` for production.\
+And define below declared environment variables to make your app work
+
+```
+CREATE_APP_API_URL=http://example.com/
+```
+
 ### `npm start`
 
 Runs the app in the development mode.\
