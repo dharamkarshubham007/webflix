@@ -2,9 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
-
-In the project directory, you can run:
+## Setup Environment Variables
 
 You need to create `.env.development` for development and `.env.production` for production.\
 And define below declared environment variables to make your app work
@@ -12,6 +10,10 @@ And define below declared environment variables to make your app work
 ```
 CREATE_APP_API_URL=http://example.com/
 ```
+
+## Available Scripts
+
+In the project directory, you can run:
 
 ### `npm start`
 
