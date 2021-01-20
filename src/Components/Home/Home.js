@@ -21,22 +21,23 @@ class Home extends React.Component {
   }
 
   componentDidMount() {
-    this.setState({
-      loading: true,
-    });
-    AxiosInstance.get(SERIES_URL)
-      .then((data) => {
-        this.props.seriesActions.fetchSeries([...data.data.entries]);
-        this.setState({
-          loading: false,
-        });
-      })
-      .catch((error) => {
-        this.setState({
-          loading: false,
-          error: true,
-        });
-      });
+    this.props.seriesActions.fetchSeries([...data.entries]);
+    // this.setState({
+    //   loading: true,
+    // });
+    // AxiosInstance.get(SERIES_URL)
+    //   .then((data) => {
+    //     this.props.seriesActions.fetchSeries([...data.data.entries]);
+    //     this.setState({
+    //       loading: false,
+    //     });
+    //   })
+    //   .catch((error) => {
+    //     this.setState({
+    //       loading: false,
+    //       error: true,
+    //     });
+    //   });
   }
 
   handleSearch = (e) => {
